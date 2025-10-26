@@ -9,7 +9,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <h1>🧬 Nesta Life Science</h1>
+    <div class="logo-container">
+      <img
+        src="images/nesta-Logo.png"
+        alt="Nesta Life Sciences Logo"
+        class="site-logo"
+      />
+      <h1 class="site-title">Nesta Life Sciences</h1>
+    </div>
     <!-- <div class="logo">🧬 Nesta Life Science Products</div> -->
     <nav class="nav-links">
       <a href="#top">Home</a>
@@ -82,25 +89,39 @@
           </div>
           <div class="product-info">
             <h3>Vednamukti Oil</h3>
-            <p class="product-description">
-              Experience natural pain relief with Vednamukti Oil — a potent
-              Ayurvedic blend of Nilgiri Oil, Menthol Crystals, Mahanarayan Oil,
-              Clove Oil, Dashmool, and Gandhapura. Formulated to soothe joint
-              pain, backaches, sore muscles, and stiffness, it absorbs quickly
-              without leaving a greasy residue. This 100% Ayurvedic remedy is
-              non-prescription and safe for everyday use.
-            </p>
-            <ul class="product-benefits">
-              <li>✔️ Relieves joint stiffness</li>
-              <li>✔️ Reduces inflammation</li>
-              <li>✔️ Promotes natural healing</li>
-              <li>✔️ Non-greasy & fast-absorbing</li>
-            </ul>
+            <div class="info-toggle" onclick="toggleDetails(this)">
+              <span class="info-icon">📋</span>
+              <span class="info-label">Explore Benefits</span>
+            </div>
 
-            <div class="product-order">
-              <p class="price-tag">
-                Only <span class="price" data-price="130">₹130</span>
+            <div class="product-details collapsed">
+              <p class="product-description">
+                Experience natural pain relief with Vednamukti Oil — a potent
+                Ayurvedic blend of Nilgiri Oil, Menthol Crystals, Mahanarayan
+                Oil, Clove Oil, Dashmool, and Gandhapura. Formulated to soothe
+                joint pain, backaches, sore muscles, and stiffness, it absorbs
+                quickly without leaving a greasy residue. This 100% Ayurvedic
+                remedy is non-prescription and safe for everyday use.
               </p>
+              <ul class="product-benefits">
+                <li>✔️ Relieves joint stiffness</li>
+                <li>✔️ Reduces inflammation</li>
+                <li>✔️ Promotes natural healing</li>
+                <li>✔️ Non-greasy & fast-absorbing</li>
+              </ul>
+            </div>
+            <div class="product-order">
+              <div class="price-box">
+                <span class="offer-badge">Limited Offer</span>
+                <p class="price-tag">
+                  <span class="price-icon">💰</span>
+                  <span class="price-label">Only</span>
+                  <span class="price" data-price="130">₹130</span>
+                </p>
+              </div>
+              <!-- <p class="price-tag">
+                Only <span class="price" data-price="130">₹130</span>
+              </p> -->
 
               <input
                 type="number"
@@ -134,26 +155,41 @@
           </div>
           <div class="product-info">
             <h3>Cough Care Juice</h3>
-            <p class="product-description">
-              Soothe your throat and strengthen your immunity with Nesta Life
-              Sciences’ Cough Care Juice — a potent Ayurvedic blend of Tulsi,
-              Ginger, Mulethi, Amla, Black Pepper, Honey, and Adusa. This 100%
-              natural remedy is FSSAI licensed and GMP certified, formulated to
-              relieve cough, clear congestion, and support respiratory health
-              without drowsiness or side effects
-            </p>
+            <div class="info-toggle" onclick="toggleDetails(this)">
+              <span class="info-icon">📋</span>
+              <span class="info-label">Explore Benefits</span>
+            </div>
 
-            <ul class="product-benefits">
-              <li>✔️ Anti-Diarrhea</li>
-              <li>✔️ Cold and Flu Control</li>
-              <li>✔️ Cough Relief</li>
-              <li>✔️ Digestive Health, Healthy Blood Sugar Levels</li>
-              <li>✔️ Strengthens respiratory health and boosts immunity</li>
-            </ul>
-            <div class="product-order">
-              <p class="price-tag">
-                Only <span class="price" data-price="130">₹130</span>
+            <div class="product-details collapsed">
+              <p class="product-description">
+                Soothe your throat and strengthen your immunity with Nesta Life
+                Sciences’ Cough Care Juice — a potent Ayurvedic blend of Tulsi,
+                Ginger, Mulethi, Amla, Black Pepper, Honey, and Adusa. This 100%
+                natural remedy is FSSAI licensed and GMP certified, formulated
+                to relieve cough, clear congestion, and support respiratory
+                health without drowsiness or side effects
               </p>
+
+              <ul class="product-benefits">
+                <li>✔️ Anti-Diarrhea</li>
+                <li>✔️ Cold and Flu Control</li>
+                <li>✔️ Cough Relief</li>
+                <li>✔️ Digestive Health, Healthy Blood Sugar Levels</li>
+                <li>✔️ Strengthens respiratory health and boosts immunity</li>
+              </ul>
+            </div>
+            <div class="product-order">
+              <div class="price-box">
+                <span class="offer-badge">Limited Offer</span>
+                <p class="price-tag">
+                  <span class="price-icon">💰</span>
+                  <span class="price-label">Only</span>
+                  <span class="price" data-price="130">₹130</span>
+                </p>
+              </div>
+              <!-- <p class="price-tag">
+                Only <span class="price" data-price="130">₹130</span>
+              </p> -->
               <input
                 type="number"
                 class="qty-input"
@@ -186,26 +222,41 @@
           </div>
           <div class="product-info">
             <h3>Detox Juice(250 ml)</h3>
-            <p class="product-description">
-              Build strength naturally with this 100% herbal tonic powered by
-              Ashwagandha, Shatavari, Safed Musli, Aloe Vera, and Gokhru. This
-              Ayurvedic blend promotes muscle gain, enhances stamina, and
-              supports hormonal balance while improving endurance, recovery, and
-              metabolism. Rich in adaptogens and free from chemicals, it’s a
-              safe, FSSAI-certified solution for holistic fitness
-            </p>
+            <div class="info-toggle" onclick="toggleDetails(this)">
+              <span class="info-icon">📋</span>
+              <span class="info-label">Explore Benefits</span>
+            </div>
 
-            <ul class="product-benefits">
-              <li>✔️ 100% Herbal & Ayurvedic</li>
-              <li>✔️ Boosts Muscle Gain & Stamina</li>
-              <li>✔️ Enhances Mental Focus & Recovery</li>
-              <li>✔️ Balances Hormones Naturally</li>
-              <li>✔️ Improves Metabolism & Energy Levels</li>
-            </ul>
-            <div class="product-order">
-              <p class="price-tag">
-                Only <span class="price" data-price="199">₹199</span>
+            <div class="product-details collapsed">
+              <p class="product-description">
+                Build strength naturally with this 100% herbal tonic powered by
+                Ashwagandha, Shatavari, Safed Musli, Aloe Vera, and Gokhru. This
+                Ayurvedic blend promotes muscle gain, enhances stamina, and
+                supports hormonal balance while improving endurance, recovery,
+                and metabolism. Rich in adaptogens and free from chemicals, it’s
+                a safe, FSSAI-certified solution for holistic fitness
               </p>
+
+              <ul class="product-benefits">
+                <li>✔️ 100% Herbal & Ayurvedic</li>
+                <li>✔️ Boosts Muscle Gain & Stamina</li>
+                <li>✔️ Enhances Mental Focus & Recovery</li>
+                <li>✔️ Balances Hormones Naturally</li>
+                <li>✔️ Improves Metabolism & Energy Levels</li>
+              </ul>
+            </div>
+            <div class="product-order">
+              <div class="price-box">
+                <span class="offer-badge">Limited Offer</span>
+                <p class="price-tag">
+                  <span class="price-icon">💰</span>
+                  <span class="price-label">Only</span>
+                  <span class="price" data-price="199">₹199</span>
+                </p>
+              </div>
+              <!-- <p class="price-tag">
+                Only <span class="price" data-price="199">₹199</span>
+              </p> -->
               <input
                 type="number"
                 class="qty-input"
@@ -239,26 +290,41 @@
           <!-- <img src="thermo.jpeg" alt="Vednamukti Oil" class="product-image" />  -->
           <div class="product-info">
             <h3>Skin & Hair Care Juice (250 ml)</h3>
-            <p class="product-description">
-              Glow from within with Nesta Life Sciences Skin & Hair Care Juice —
-              a natural Ayurvedic blend of Neem, Aloe Vera, Haldi, Haritaki, and
-              Manjistha. Rich in antioxidants, Omega-3s, and Vitamins C & E, it
-              helps detoxify, boost collagen, and protect against sun and
-              pollution. FSSAI certified, GMP manufactured, and free from
-              chemicals, it’s your daily ritual for radiant skin and healthy
-              hair.
-            </p>
-            <ul class="product-benefits">
-              <li>✔️ 100% Ayurvedic & Natural</li>
-              <li>✔️ Detoxifies from Within</li>
-              <li>✔️ Promotes Radiant Skin</li>
-              <li>✔️ Strengthens Hair Roots</li>
-              <li>✔️ Protects Against Sun & Pollution</li>
-            </ul>
-            <div class="product-order">
-              <p class="price-tag">
-                Only <span class="price" data-price="199">₹199</span>
+            <div class="info-toggle" onclick="toggleDetails(this)">
+              <span class="info-icon">📋</span>
+              <span class="info-label">Explore Benefits</span>
+            </div>
+
+            <div class="product-details collapsed">
+              <p class="product-description">
+                Glow from within with Nesta Life Sciences Skin & Hair Care Juice
+                — a natural Ayurvedic blend of Neem, Aloe Vera, Haldi, Haritaki,
+                and Manjistha. Rich in antioxidants, Omega-3s, and Vitamins C &
+                E, it helps detoxify, boost collagen, and protect against sun
+                and pollution. FSSAI certified, GMP manufactured, and free from
+                chemicals, it’s your daily ritual for radiant skin and healthy
+                hair.
               </p>
+              <ul class="product-benefits">
+                <li>✔️ 100% Ayurvedic & Natural</li>
+                <li>✔️ Detoxifies from Within</li>
+                <li>✔️ Promotes Radiant Skin</li>
+                <li>✔️ Strengthens Hair Roots</li>
+                <li>✔️ Protects Against Sun & Pollution</li>
+              </ul>
+            </div>
+            <div class="product-order">
+              <div class="price-box">
+                <span class="offer-badge">Limited Offer</span>
+                <p class="price-tag">
+                  <span class="price-icon">💰</span>
+                  <span class="price-label">Only</span>
+                  <span class="price" data-price="199">₹199</span>
+                </p>
+              </div>
+              <!-- <p class="price-tag">
+                Only <span class="price" data-price="199">₹199</span>
+              </p> -->
               <input
                 type="number"
                 class="qty-input"
@@ -339,6 +405,71 @@
     </footer>
 
     <script>
+      // Toggle logic for each product card
+      document.querySelectorAll(".info-toggle").forEach((toggleBox) => {
+        toggleBox.addEventListener("click", (event) => {
+          event.stopPropagation(); // Prevent triggering outside click
+
+          const clickedCard = toggleBox.closest(".product-card");
+          const clickedDetails = clickedCard.querySelector(".product-details");
+          const clickedInput = clickedCard.querySelector(".qty-input");
+          const label = toggleBox.querySelector(".info-label");
+          const icon = toggleBox.querySelector(".info-icon");
+
+          // Collapse all other cards and clear their inputs
+          document.querySelectorAll(".product-card").forEach((card) => {
+            const details = card.querySelector(".product-details");
+            const input = card.querySelector(".qty-input");
+            const toggle = card.querySelector(".info-toggle");
+            const toggleLabel = toggle?.querySelector(".info-label");
+            const toggleIcon = toggle?.querySelector(".info-icon");
+
+            if (card !== clickedCard) {
+              details.classList.remove("expanded");
+              input.value = "";
+              if (toggleLabel && toggleIcon) {
+                toggleLabel.textContent = "Explore Benefits";
+                toggleIcon.textContent = "📋";
+              }
+            }
+          });
+
+          // Toggle clicked card
+          const isExpanded = clickedDetails.classList.contains("expanded");
+          clickedDetails.classList.toggle("expanded");
+
+          if (label && icon) {
+            label.textContent = isExpanded
+              ? "Explore Benefits"
+              : "Hide Benefits";
+            icon.textContent = isExpanded ? "📋" : "❌";
+          }
+        });
+      });
+
+      // Global click listener to collapse everything when clicking outside
+      document.addEventListener("click", (event) => {
+        const clickedInsideCard = event.target.closest(".product-card");
+
+        if (!clickedInsideCard) {
+          document.querySelectorAll(".product-card").forEach((card) => {
+            const details = card.querySelector(".product-details");
+            const input = card.querySelector(".qty-input");
+            const toggle = card.querySelector(".info-toggle");
+            const label = toggle?.querySelector(".info-label");
+            const icon = toggle?.querySelector(".info-icon");
+
+            details.classList.remove("expanded");
+            input.value = "";
+
+            if (label && icon) {
+              label.textContent = "Explore Benefits";
+              icon.textContent = "📋";
+            }
+          });
+        }
+      });
+
       // active link
 
       const sections = document.querySelectorAll("section[id]");
